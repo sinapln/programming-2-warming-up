@@ -12,6 +12,9 @@ package part03;
  */
 public class Person {
 
+    private String name;
+    private int age;
+
     /**
      * Constructs a new `Person` object with the specified name and age.
      *
@@ -19,7 +22,8 @@ public class Person {
      * @param age  The age of the person.
      */
     public Person(String name, int age) {
-        // TODO: implement this constructor
+        this.name = name;
+        this.age = age;
     }
 
     /**
@@ -28,7 +32,7 @@ public class Person {
      * @return The age of the person as an integer.
      */
     public int getAge() {
-        return 0; // TODO: implement this method
+        return this.age;
     }
 
     /**
@@ -37,7 +41,7 @@ public class Person {
      * @return The name of the person as a string.
      */
     public String getName() {
-        return null; // TODO: implement this method
+        return this.name;
     }
 
     /**

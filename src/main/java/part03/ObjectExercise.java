@@ -23,14 +23,20 @@ public class ObjectExercise {
      * @param people A list of Person objects to get the names from.
      * @return A list of names of the people in the list.
      */
+
     public List<String> getNames(List<Person> people) {
         List<String> names = new ArrayList<>();
+        
+        if (people == null || people.isEmpty()) {
+            return names;
+        }
+
         for (Person p : people) {
             names.add(p.getName());
         }
         return names;
     }
-
+    
     /**
      * Returns the oldest person in the list. This method takes a list of Person
      * objects and returns the oldest person in the list.
